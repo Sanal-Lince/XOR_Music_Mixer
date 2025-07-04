@@ -1,0 +1,60 @@
+
+<!-- XOR - AI Music Mixer UI (HTML + Tailwind CSS) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XOR - AI Music Mixer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top left, #0f0f0f, #000000);
+      color: white;
+    }
+    .glow-text {
+      text-shadow: 0 0 10px #8f00ff, 0 0 20px #8f00ff;
+    }
+    .upload-zone:hover {
+      border-color: #8f00ff;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-8">
+  <div class="text-5xl font-bold glow-text mb-2">✦ XOR ✦</div>
+  <div class="text-lg mb-10 text-purple-400">Blend the Beat. Mix with XOR.</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 w-full max-w-4xl">
+    <div class="border-2 border-dashed border-gray-600 p-6 rounded-lg upload-zone">
+      <label class="block text-center mb-2">Upload Track 1</label>
+      <input type="file" accept="audio/*" class="w-full" />
+    </div>
+    <div class="border-2 border-dashed border-gray-600 p-6 rounded-lg upload-zone">
+      <label class="block text-center mb-2">Upload Track 2</label>
+      <input type="file" accept="audio/*" class="w-full" />
+    </div>
+  </div>
+  <div class="mb-6">
+    <label class="mr-2">Choose Style:</label>
+    <select class="bg-gray-800 border border-purple-500 px-3 py-1 rounded text-white">
+      <option>Chill</option>
+      <option>Trap</option>
+      <option>Cinematic</option>
+      <option>AI Ambient</option>
+    </select>
+  </div>
+  <button class="bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-full glow-text transition-all duration-300">
+    🔀 MIX TRACKS
+  </button>
+  <div class="mt-10 w-full max-w-xl">
+    <audio controls class="w-full">
+      <source src="#" type="audio/mp3" />
+    </audio>
+  </div>
+  <div class="mt-4 flex gap-6">
+    <button class="text-sm underline text-purple-400 hover:text-purple-300">🔗 Download</button>
+    <button class="text-sm underline text-purple-400 hover:text-purple-300">🔁 Remix Again</button>
+  </div>
+</body>
+</html>
