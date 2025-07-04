@@ -24,7 +24,7 @@ This project serves as an MVP for what will evolve into a full-featured AI-power
 
 ### 1. Clone or download the project
 
-    git clone https://github.com/yourname/xor-ai-music-mixer.git
+    git clone https://github.com/Sanal-Lince/XOR_Music_Mixer.git
     cd xor-ai-music-mixer
 
 ### 2. Install Backend Dependencies
